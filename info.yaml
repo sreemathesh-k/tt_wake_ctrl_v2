@@ -1,0 +1,38 @@
+project:
+  title:       "Priority-Aware Event-Driven Wake Controller"
+  author:      "Sreemathesh K"
+  discord:     ""
+  description: "A 4-channel always-on digital wake controller for batteryless IoT sensors. Monitors asynchronous threshold inputs using 2FF synchronizers and debounce counters, detects events in AND or OR mode, and generates a clean wake pulse with hardware priority encoding."
+  language:    "Verilog"
+  clock_hz:    50000000
+
+  source_files:
+    - project.v
+
+  top_module: "tt_um_sreemathesh_wake_ctrl"
+
+  pinout:
+    ui[0]: "thresh_in[0] - sensor channel 0"
+    ui[1]: "thresh_in[1] - sensor channel 1"
+    ui[2]: "thresh_in[2] - sensor channel 2"
+    ui[3]: "thresh_in[3] - sensor channel 3"
+    ui[4]: "ch_en[0] and mode_and"
+    ui[5]: "ch_en[1]"
+    ui[6]: "ch_en[2]"
+    ui[7]: "ch_en[3]"
+    uo[0]: "wake_out - clean wake pulse"
+    uo[1]: "evt_flags[0]"
+    uo[2]: "evt_flags[1]"
+    uo[3]: "evt_flags[2]"
+    uo[4]: "evt_flags[3]"
+    uo[5]: "priority_ch[0]"
+    uo[6]: "priority_ch[1]"
+    uo[7]: "unused"
+    uio[0]: "unused"
+    uio[1]: "unused"
+    uio[2]: "unused"
+    uio[3]: "unused"
+    uio[4]: "unused"
+    uio[5]: "unused"
+    uio[6]: "unused"
+    uio[7]: "unused"
