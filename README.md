@@ -2,7 +2,7 @@
 
 [![GDS](../../actions/workflows/gds.yml/badge.svg)](../../actions/workflows/gds.yml)
 
-**Author:** Sreemathesh K, B.E. ECE 2nd Year, SRM IST, India
+**Author:** Sreemathesh K
 
 A 4-channel always-on digital wake controller for batteryless IoT sensors. Built as part of my undergraduate ASIC project — previously taped out through OpenROAD on SKY130 with zero DRC violations.
 
